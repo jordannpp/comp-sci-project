@@ -4,15 +4,13 @@ Authors: Jordan and Alex
 Date: 11/9/2025
 Description:
 This program lets users check how strong a password is,
-generate random passwords, and view their saved history.
-It uses functions, loops, conditionals, lists, strings, file I/O,
-and includes a simple encryption feature.
+generate random passwords, and view saved history.
 """
 
 import time
 import random
 
-# Color codes for terminal output
+# Color codes
 RED = "\033[91m"
 GREEN = "\033[92m"
 YELLOW = "\033[93m"
@@ -41,14 +39,14 @@ def progress_bar(percent):
 
 # Personality responses
 friendly = [
-    "Nice job! That’s a solid password!",
+    "Nice job! That’s a pretty good password!",
     "Good effort! Keep improving!",
     "Looks better than most people’s passwords!"
 ]
 
-roasty = [
-    "That’s not even trying.",
-    "Even my toaster could guess that one.",
+roast = [
+    "uhhh, okay? .",
+    "This is genuienly one of the worst passwords i have ever seen in my life.",
     "Bro... really?"
 ]
 
@@ -238,3 +236,4 @@ def main():
             print(RED + "Invalid choice, try again." + RESET)
 
 main()
+
